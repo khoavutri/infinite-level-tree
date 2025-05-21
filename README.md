@@ -31,7 +31,7 @@ npm start
 
 Explore the `infinite-level-tree` in action! The demo showcases a dynamic, hierarchical tree structure with features like node selection, drag-and-drop, and lazy loading of child nodes.
 
-📺 **Live Demo**: [Coming soon!](#) _(Placeholder link, to be updated with a hosted demo)_  
+📺 **Live Demo**: [infinite-level-tree](https://infinite-level-tree.vercel.app/) _(Live preview of the project)_
 🖼️ **Screenshot**:  
 ![Demo Screenshot](https://via.placeholder.com/600x400.png?text=Infinite+Level+Tree+Demo) _(Replace with actual screenshot)_
 
