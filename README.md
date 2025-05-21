@@ -121,45 +121,144 @@ export default App;
 
 ### Configuration Options
 
-- **`el`**: `(HTMLElement)` - DOM element to render the tree.
-- **`data`**: `(Object|Array)` - Tree data with `id`, `name`, and optional `children` and `loadOnDemand` properties.
-- **`autoOpen`**: `(Boolean)` - Expand all nodes on initialization (default: `false`).
-- **`droppable`**: `(Object)` - Configure drag-and-drop behavior (e.g., `hoverClass`, `accept`, `drop`).
-- **`shouldLoadNodes`**: `(Function)` - Determines if a node’s children should be loaded dynamically.
-- **`loadNodes`**: `(Function)` - Handles asynchronous loading of child nodes.
-- **`rowRenderer`**: `(Function)` - Customizes node rendering (returns HTML string).
-- **`shouldSelectNode`**: `(Function)` - Controls node selection logic.
+The `infinite-level-tree` library leverages the `useTreeNode` hook and `TreeView` component to manage tree structures in React applications. Below are the key configuration options for the `useTreeNode` hook and `TreeView` component.
+
+#### `useTreeNode` Hook Configuration
+
+The `useTreeNode` hook processes tree data and provides state management for node selection and expansion. It accepts the following parameters:
+
+- **`data`**: `(Object | Array | null)` - The tree data structure. Each node should include properties like `id`, `name`, `children` (optional), and `checked` (optional). If `id` is missing, a UUID is automatically assigned.
+- **`mapper`**: `(Mapper)` - Customizes property names for the tree data. Defaults to:
+  ```javascript
+  {
+    id: 'id',
+    name: 'name',
+    children: 'children',
+    checked: 'checked'
+  }
+  ```
+  Example: `{ id: 'key', name: 'label', children: 'subnodes' }` to map custom field names.
+- **`config`**: `(Config)` - Optional configuration object. Supports:
+  - `initalChecked`: `(Boolean | null)` - If `true`, all leaf nodes are checked initially; if `false`, none are checked; if `null`, uses the `checked` property from the data.
+
+#### `TreeView` Component Props
+
+The `TreeView` component renders the tree structure and supports customization for styling and behavior. It accepts the following props:
+
+- **`treeNode`**: `(TreeNode)` - The tree node object returned by `useTreeNode`, containing processed data and methods.
+- **`popoverContent`**: `(any)` - Optional content for a popover displayed on node interaction.
+- **`folderIcon`**: `(React.ReactNode)` - Custom icon for folder nodes.
+- **`expandIcon`**: `(React.ReactNode)` - Custom icon for expanded nodes.
+- **`toggleIcon`**: `(React.ReactNode)` - Custom icon for toggling node expansion.
+- **`folderNameStyle`**: `(React.CSSProperties)` - Custom styles for folder names.
+- **`itemNameStyle`**: `(React.CSSProperties)` - Custom styles for item (leaf) names.
+- **`checkboxStyle`**: `(React.CSSProperties)` - Custom styles for checkboxes.
+- **`triggerPopoverStyle`**: `(React.CSSProperties)` - Styles for the popover trigger.
+- **`popoverStyle`**: `(React.CSSProperties)` - Styles for the popover container.
+- **`className`**: `(String)` - Additional CSS classes for the tree container, merged with default styles (`styles.infiniteLevelTree`).
 
 ### Key Methods
 
-- **`getNodeById(id)`**: Retrieves a node by ID.
-- **`selectNode(node)`**: Selects a node programmatically.
-- **`openNode(node)`**: Expands a node.
-- **`closeNode(node)`**: Collapses a node.
-- **`getSelectedNode()`**: Returns the currently selected node.
-- **`on(event, callback)`**: Attaches event listeners (e.g., `click`, `openNode`, `contentDidUpdate`).
+The `useTreeNode` hook returns a `TreeNode` object with methods to manage the tree's state and behavior. Below are the key methods available:
+
+- **`getIdByFolder(data)`**: Returns an array of IDs for all leaf nodes (nodes without children) in the provided data.
+  - Parameters: `data` (tree data to traverse).
+  - Returns: `ID[]` (array of node IDs).
+- **`checkAll()`**: Checks all leaf nodes by setting their IDs in the `current` state.
+- **`unCheckAll()`**: Unchecks all nodes by clearing the `current` state.
+- **`openAll()`**: Triggers expansion of all nodes by incrementing the `triggerOpen` state.
+- **`closeAll()`**: Collapses all nodes by incrementing the `triggerOpen` state.
+- **`generateCheckedTree(filterFields?)`**: Generates a new tree with updated `checked` properties based on the `current` state.
+  - Parameters: `filterFields` (optional array of field names to exclude from the output).
+  - Returns: Processed tree data with updated `checked` properties.
+- **`onCheckedChange(callback)`**: Subscribes to changes in the checked state.
+  - Parameters: `callback` (function receiving the updated `TreeNode`).
+  - Returns: A cleanup function to unsubscribe from the event.
+- **`setCurrent(ids)`**: Manually sets the array of checked node IDs.
+  - Parameters: `ids` (array of node IDs to mark as checked).
+
+The `TreeNode` object also exposes:
+
+- **`originalData`**: The raw input data.
+- **`data`**: The processed tree data with assigned IDs.
+- **`mapper`**: The active mapper configuration.
+- **`config`**: The active config object.
+- **`current`**: Array of currently checked node IDs.
+- **`triggerOpen`**: State controlling node expansion.
 
 ### Example: Dynamic Node Loading
 
+The `useTreeNode` hook supports dynamic node loading by processing data asynchronously and updating the tree state. Below is an example demonstrating how to integrate `useTreeNode` with `TreeView` for a tree with dynamically loaded nodes.
+
 ```javascript
-const tree = new InfiniteLevelTree({
-  el: document.querySelector("#tree-container"),
-  data: { id: "root", name: "Root", loadOnDemand: true },
-  shouldLoadNodes: (node) => node.loadOnDemand,
-  loadNodes: (parentNode, next) => {
-    setTimeout(() => {
-      next(null, [
-        {
-          id: `${parentNode.id}.1`,
-          name: `${parentNode.name}.1`,
-          loadOnDemand: true,
-        },
-        { id: `${parentNode.id}.2`, name: `${parentNode.name}.2` },
-      ]);
-    }, 1000);
-  },
-});
+import React, { useEffect } from "react";
+import { TreeView, useTreeNode } from "infinite-level-tree";
+import "infinite-level-tree/dist/infinite-level-tree.css";
+
+const App = () => {
+  const [data, setData] = React.useState({
+    id: "root",
+    name: "Root",
+    loadOnDemand: true,
+    children: [],
+  });
+
+  const treeNode = useTreeNode({
+    data,
+    mapper: {
+      id: "id",
+      name: "name",
+      children: "children",
+      checked: "checked",
+    },
+    config: { initalChecked: false },
+  });
+
+  // Simulate dynamic node loading
+  useEffect(() => {
+    if (treeNode.data?.loadOnDemand) {
+      setTimeout(() => {
+        setData({
+          ...data,
+          children: [
+            { id: `${data.id}.1`, name: `${data.name}.1`, loadOnDemand: true },
+            { id: `${data.id}.2`, name: `${data.name}.2`, checked: false },
+          ],
+        });
+      }, 1000);
+    }
+  }, [treeNode.data]);
+
+  // Log checked nodes
+  useEffect(() => {
+    treeNode.onCheckedChange((updatedTree) => {
+      console.log("Checked nodes:", updatedTree.current);
+    });
+  }, [treeNode]);
+
+  return (
+    <TreeView
+      treeNode={treeNode}
+      folderIcon={<span>📁</span>}
+      expandIcon={<span>➡️</span>}
+      toggleIcon={<span>🔄</span>}
+      folderNameStyle={{ fontWeight: "bold" }}
+      itemNameStyle={{ color: "blue" }}
+      checkboxStyle={{ marginRight: "5px" }}
+      className="custom-tree"
+    />
+  );
+};
+
+export default App;
 ```
+
+This example:
+
+- Initializes a tree with a root node marked for dynamic loading (`loadOnDemand: true`).
+- Uses `useEffect` to simulate fetching child nodes after a delay.
+- Renders the tree with custom icons and styles using the `TreeView` component.
+- Subscribes to checked state changes to log selected nodes.
 
 For a complete API reference, see the [GitHub repository](https://github.com/khoavutri/infinite-level-tree).
 
