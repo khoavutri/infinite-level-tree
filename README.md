@@ -213,25 +213,10 @@ const App = () => {
     config: { initalChecked: false },
   });
 
-  // Simulate dynamic node loading
-  useEffect(() => {
-    if (treeNode.data?.loadOnDemand) {
-      setTimeout(() => {
-        setData({
-          ...data,
-          children: [
-            { id: `${data.id}.1`, name: `${data.name}.1`, loadOnDemand: true },
-            { id: `${data.id}.2`, name: `${data.name}.2`, checked: false },
-          ],
-        });
-      }, 1000);
-    }
-  }, [treeNode.data]);
-
   // Log checked nodes
   useEffect(() => {
     treeNode.onCheckedChange((updatedTree) => {
-      console.log("Checked nodes:", updatedTree.current);
+      console.log("Current tree:", updatedTree);
     });
   }, [treeNode]);
 
