@@ -64,7 +64,21 @@ npm install infinite-level-tree
 Initialize a tree with a DOM element and data structure:
 
 ```javascript
- const tree = useTreeNode({ data, config: { left: 50 } })
+import { useEffect } from "react";
+import { TreeView, useTreeNode } from "infinite-level-tree";
+import data from "./test.json";
+
+const MyTooltip = ({ data }: { data?: any }) => {
+  return (
+    <div style={{ margin: 0, padding: 0 }}>
+      <h4>{data && data.name}</h4>
+      <p>{data && data.describe}</p>
+    </div>
+  );
+};
+
+const App = () => {
+  const tree = useTreeNode({ data, config: { left: 50 } });
 
   useEffect(() => {
     const unsubscribe = tree.onCheckedChange((x) => {
@@ -74,38 +88,22 @@ Initialize a tree with a DOM element and data structure:
     return () => {
       unsubscribe();
     };
-  }, [])
+  }, []);
 
   return (
-    <div style={{ height: '100%', }}>
+    <div style={{ height: "100%" }}>
       <TreeView treeNode={tree} popoverContent={MyTooltip} />
-      <div style={{ display: 'flex', gap: '8px', marginTop: '12px' }}>
-        <button
-          onClick={() => tree.checkAll()}
-        >
-          Check All
-        </button>
+      <div style={{ display: "flex", gap: "8px", marginTop: "12px" }}>
+        <button onClick={() => tree.checkAll()}>Check All</button>
+
+        <button onClick={() => tree.unCheckAll()}>Uncheck All</button>
+
+        <button onClick={() => tree.openAll()}>Open All</button>
+
+        <button onClick={() => tree.closeAll()}>Close All</button>
 
         <button
-          onClick={() => tree.unCheckAll()}
-        >
-          Uncheck All
-        </button>
-
-        <button
-          onClick={() => tree.openAll()}
-        >
-          Open All
-        </button>
-
-        <button
-          onClick={() => tree.closeAll()}
-        >
-          Close All
-        </button>
-
-        <button
-          style={{ backgroundColor: '#3b82f6', color: '#fff' }}
+          style={{ backgroundColor: "#3b82f6", color: "#fff" }}
           onClick={() => {
             const newData = tree.generateCheckedTree();
             console.log(newData);
@@ -114,6 +112,11 @@ Initialize a tree with a DOM element and data structure:
           Generate Data
         </button>
       </div>
+    </div>
+  );
+};
+
+export default App;
 ```
 
 ### Configuration Options

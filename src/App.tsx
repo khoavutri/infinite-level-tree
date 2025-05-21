@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { TreeView, useTreeNode } from '../lib/main'
-import './App.css'
 import data from "./test.json"
 
 const MyTooltip = ({ data }: { data?: any }) => {
@@ -10,7 +9,7 @@ const MyTooltip = ({ data }: { data?: any }) => {
   </div>
 };
 
-function App() {
+const App = () => {
   const tree = useTreeNode({ data, config: { left: 50 } })
 
   useEffect(() => {
