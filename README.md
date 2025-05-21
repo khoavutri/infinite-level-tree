@@ -59,12 +59,6 @@ Install via npm:
 npm install infinite-level-tree
 ```
 
-For browser usage, include the CSS:
-
-```javascript
-require("infinite-level-tree/dist/infinite-level-tree.css");
-```
-
 ### Basic Usage
 
 Initialize a tree with a DOM element and data structure:
