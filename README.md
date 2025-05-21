@@ -135,11 +135,11 @@ The `useTreeNode` hook processes tree data and provides state management for nod
   ```
   Example: `{ id: 'key', name: 'label', children: 'subnodes' }` to map custom field names.
 - **`config`**: `(Config)` - Optional configuration object. Supports:
-  - `initalChecked`: `(Boolean | null)` - If `true`, all leaf nodes are checked initially; if `false`, none are checked; if `null`, uses the `checked` property from the data.
+  - `initalChecked`: `(Boolean)` - If `true`, all leaf nodes are checked initially; if `false`, none are checked; if `underfine`, uses the `checked` property from the data.
   - `initalOpen`: `(Boolean)` - If `true`, all folders are expanded initially; if `false`, all folders are collapsed. Default is `false`.
   - `left`: `(Number)` - The indentation in pixels for each level of the tree. Default is `10`.
-  - `disableOnlyFolder`: `(Boolean)` - If `true`, disables selecting or deselecting all items by clicking on a folder checkbox.
-  - `disableOnlyItem`: `(Boolean)` - If `true`, disables selecting individual leaf nodes directly.
+  - `disableOnlyFolder`: `(Boolean)` – If `false` or not set, clicking on the **folder name** will select all items inside that folder and simultaneously deselect all items outside the folder.   If `true`, this behavior is disabled.
+- `disableOnlyItem`: `(Boolean)` – If `false` or not set, clicking on the **item name** will select only that item and deselect all other items.  If `true`, this behavior is disabled.
 
 #### `TreeView` Component Props
 
