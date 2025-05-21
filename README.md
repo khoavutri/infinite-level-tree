@@ -1,4 +1,4 @@
-# 🚀 Infinite Level Tree
+# 🚀 Infinite Level Tree (https://www.npmjs.com/package/infinite-level-tree)
 
 📦 **Owned by:** [Vu Tri Khoa](https://github.com/khoavutri) ([GitLab](https://gitlab.com/khoavip07))
 
