@@ -10,9 +10,11 @@
 
 ## ✨ Features
 
-- ⚡ **High Performance:** Built for speed and scalability, optimized for large datasets with infinite scrolling.
-- 🛠️ **Ease of Use:** Developer-friendly API with straightforward setup and customization.
-- 🔒 **Secure:** Follows the latest security best practices for safe DOM manipulation and data handling.
+- ⚡ **Dynamic and Scalable Tree Rendering**: Efficiently handles large, hierarchical datasets with support for dynamic node loading, ideal for applications like file explorers or organizational charts.
+- 🛠️ **React-Friendly API**: Seamlessly integrates with React using the `TreeView` component and `useTreeNode` hook, offering intuitive setup and customizable node rendering.
+- ✅ **Interactive Node Selection**: Supports checkable nodes with bulk check/uncheck functionality, enabling easy management of selected items across the tree.
+- 🔄 **Flexible Node Expansion**: Provides programmatic control over node expansion and collapse, with customizable icons and styles for a tailored user experience.
+- 🔒 **Secure and Reliable**: Ensures safe data handling with automatic ID generation for nodes and secure event management, adhering to modern React best practices.
 
 ---
 
