@@ -1,0 +1,555 @@
+[
+  {
+    "name": "Thyroid",
+    "children": [
+      {
+        "name": "Group I",
+        "children": [
+          {
+            "name": "1",
+            "describe": "The cytology smear contains mostly red blood cells and little colloid. No thyroid epithelial cells are seen.",
+            "result": "No malignant cells detected <br/> (Category I according to Bethesda 2017 system)",
+            "recommended": "Correlate with clinical and imaging findings if necessary",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#c8e0b7",
+            "children": [
+              {
+                "name": "1",
+                "children": [{ "name": "Vu tri khoa" }, { "name": "khoa dev" }]
+              }
+            ]
+          },
+          {
+            "name": "2",
+            "describe": "The cytology smear shows low cellularity with little colloid and predominantly red blood cells. No thyroid epithelial cells are seen.",
+            "result": "No malignant cells detected <br/> (Category I according to Bethesda 2017 system)",
+            "recommended": "Correlate with clinical and imaging findings if necessary",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#c8e0b7"
+          }
+        ]
+      },
+      {
+        "name": "Group II",
+        "children": [
+          {
+            "name": "Colloid Goiter",
+            "describe": "On the smear, mainly dense colloid material is observed, with a few epithelial cells that have small, round, benign nuclei, interspersed with some macrophages. No malignant cells are detected.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology),<br/> consistent with colloid goiter",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Benign nodule 1",
+            "describe": "The cytology smear shows scant colloid background, interspersed with clusters of uniformly small thyroid follicular epithelial cells arranged in flat sheets. No malignant cells are observed.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology)",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Benign nodule 2",
+            "describe": "The microscopic findings of the cytology smear show some small, uniform, benign epithelial cells arranged in clusters interspersed with a few inflammatory and fibrous cells on a background of colloid. No malignant cells are seen.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology)",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Colloid cyst of the thyroid 1",
+            "describe": "On the smear, red blood cells, abundant colloid material, and thyroid epithelial cells with round, uniform nuclei are observed, either scattered or in clusters, interspersed with macrophages and a few small lymphocytes. No malignant cells are detected.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology),<br/> consistent with a colloid cyst of the thyroid",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Colloid cyst of the thyroid 2",
+            "describe": "On the smear, a low cell density is observed with abundant colloid material. Scattered epithelial cells with small, round nuclei are seen, interspersed with a few mononuclear inflammatory cells. No malignant cells are detected.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology),<br/> consistent with a colloid cyst of the thyroid",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Hemorhagic colloid cyst 1",
+            "describe": "On the smear, degenerating red blood cells and abundant dilute thyroid colloid material are observed, with few thyroid epithelial cells having small, round nuclei, interspersed with many macrophages containing hemosiderin. No malignant cells are detected.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology),<br/> consistent with a hemorrhagic colloid cyst of the thyroid",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee",
+            "checked": true
+          },
+          {
+            "name": "Hemorhagic colloid cyst 2",
+            "describe": "The cytology specimen shows numerous degenerated red blood cells, interspersed with many hemosiderin-laden macrophages and a few epithelial cells with round, uniform, benign nuclei, with little colloid. No malignant cells are seen.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology),<br/> consistent with subacute thyroiditis",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee",
+            "checked": true
+          },
+          {
+            "name": "Subacute thyroiditis",
+            "describe": "On the smear, few thyroid epithelial cells with small, round nuclei are observed, interspersed with fibrous and inflammatory cells, scattered follicular cells, and some multinucleated giant cells. The smear background is poor in thyroid colloid material. No malignant cells are detected.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology),<br/> consistent with subacute thyroiditis",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Chronic thyroiditis",
+            "describe": "On the smear, scattered thyroid epithelial cells with small, round nuclei are observed, either isolated or in clusters, interspersed with many small lymphocytes and transformed lymphocytes. The background of the smear contains little thyroid colloid material. No malignant cells are detected.",
+            "result": "Benign (Group II according to the 2017 Bethesda System for Reporting Thyroid Cytopathology),<br/> consistent with chronic thyroiditis with abundant lymphocytes",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          }
+        ]
+      },
+      {
+        "name": "Group III",
+        "children": [
+          {
+            "name": "AUS",
+            "describe": "On the smear, a low cell density is observed, with a few small clusters of thyroid epithelial cells exhibiting large nuclei, irregular nuclear membranes, and overlapping arrangement. Some cells have nuclear grooves. No nuclear inclusions are seen.",
+            "result": "Atypical cytological features, AUS <br/> (Group III according to the 2017 Bethesda System for Reporting Thyroid Cytopathology)",
+            "recommended": "Clinical correlation, follow-up, and periodic fine needle aspiration for evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#ffd76e"
+          },
+          {
+            "name": "FLUS",
+            "describe": "On the smear, there is a small amount of colloid material, with scattered thyroid epithelial cells exhibiting mildly enlarged nuclei, irregular nuclear membranes, and mainly arranged in small clusters or microfollicles.",
+            "result": "Follicular lesion of undetermined significance, FLUS <br/> (Group III according to the 2017 Bethesda System for Reporting Thyroid Cytopathology)",
+            "recommended": "Clinical correlation, follow-up, and periodic fine needle aspiration for evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#ffd76e"
+          }
+        ]
+      },
+      {
+        "name": "Group IV",
+        "children": [
+          {
+            "name": "Follicular Neoplasm (FN/SFN)",
+            "describe": "On the smear, there is proliferation of epithelial cells with round, fairly uniform nuclei, primarily arranged in follicular or microfollicular patterns. The background of the smear contains little thyroid colloid material.",
+            "result": "Suggestive of a follicular neoplasm <br/> (Group IV according to the 2017 Bethesda System for Reporting Thyroid Cytopathology)",
+            "recommended": "Surgical removal of the tumor for diagnosis and histopathological evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#d0cece"
+          },
+          {
+            "name": "Follicular Neoplasm (Hurthle cell)",
+            "describe": "On the smear, the background contains red blood cells, with thyroid epithelial cells exhibiting abundant eosinophilic cytoplasm, round nuclei, prominent nucleoli, and arranged either individually or in small clusters.",
+            "result": "Suggestive of Hurthle cell tumor <br/> (Group IV according to the 2017 Bethesda System for Reporting Thyroid Cytopathology)",
+            "recommended": "Surgical removal of the tumor for diagnosis and histopathological evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#d0cece"
+          }
+        ]
+      },
+      {
+        "name": "Group V",
+        "children": [
+          {
+            "name": "Suspicious for malignancy 1",
+            "describe": "On the smear, a high cell density is observed. Thyroid epithelial cells exhibit mildly enlarged, basophilic nuclei with irregular nuclear membranes, arranged in overlapping clusters, with some areas suggesting papillary structures. Some cells have nuclear grooves, and no nuclear inclusions are clearly visible. The background contains little thyroid colloid material.",
+            "result": "Suspicious for malignancy (Group V according to the Bethesda System for Reporting Thyroid Cytopathology), suggestive of papillary thyroid carcinoma",
+            "recommended": "Surgical removal of the tumor for diagnosis and histopathological evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#f2ae86"
+          },
+          {
+            "name": "Suspicious for malignancy 2",
+            "describe": "On the smear, a low cell density is observed, with scattered small clusters of thyroid epithelial cells exhibiting large, basophilic nuclei with irregular nuclear membranes, arranged in overlapping patterns. Some cells have elongated nuclei with grooves, and some contain nuclear inclusions. The background contains little thyroid colloid material.",
+            "result": "Suspicious for malignancy (Group V according to the Bethesda System for Reporting Thyroid Cytopathology), suggestive of papillary thyroid carcinoma",
+            "recommended": "Surgical removal of the tumor for diagnosis and histopathological evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#f2ae86"
+          }
+        ]
+      },
+      {
+        "name": "Group VI",
+        "children": [
+          {
+            "name": "Malignancy",
+            "describe": "On the smear, a high cell density is observed. Thyroid epithelial cells exhibit large, basophilic nuclei with irregular nuclear membranes, arranged in clusters forming papillary structures. Some cells have elongated nuclei with grooves, and some contain nuclear inclusions. The background contains little thyroid colloid material.",
+            "result": "Malignant (Group VI according to the Bethesda System for Reporting Thyroid Cytopathology), consistent with papillary thyroid carcinoma",
+            "recommended": "Surgical removal of the tumor for histopathological diagnosis and treatment",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#ea7a36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Breast",
+    "children": [
+      {
+        "name": "Group I",
+        "children": [
+          {
+            "name": "1",
+            "describe": "On the smear, primarily red blood cells are observed, with scattered adipocytes and inflammatory cells. No epithelial cells from the breast or malignant cells are detected.",
+            "result": "No malignant cells detected (Group I according to the Yokohama 2019 classification)",
+            "recommended": "Correlate with clinical and imaging findings if necessary",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#c8e0b7"
+          },
+          {
+            "name": "2",
+            "describe": "On the smear, primarily red blood cells are observed, with scattered inflammatory cells and very few breast epithelial cells with small, uniform nuclei. No malignant cells are detected.",
+            "result": "No malignant cells detected (Group I according to the Yokohama 2019 classification)",
+            "recommended": "Correlate with clinical and imaging findings if necessary",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#c8e0b7"
+          }
+        ]
+      },
+      {
+        "name": "Group II",
+        "children": [
+          {
+            "name": "Benign breast cyst",
+            "describe": "The smear shows a cystic fluid background, with scattered benign epithelial cells and macrophages. No malignant cells are seen.",
+            "result": "Benign (Group II according to the Yokohama 2019 classification), consistent with a benign breast cyst",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Fibrocystic change",
+            "describe": "The smear shows a cystic fluid background, with breast epithelial cells having small nuclei, fine chromatin, arranged in tightly bound clusters, interspersed with numerous myoepithelial cells with naked nuclei, fibroblasts, macrophages, and apocrine metaplastic epithelial cells. No malignant cells are detected.",
+            "result": "Benign (Group II according to the Yokohama 2019 classification), consistent with fibrocystic changes of the breast",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Acute inflammation",
+            "describe": "On the smear, many inflammatory cells are observed, primarily neutrophils, some of which are degenerated, interspersed with a few lymphocytes and macrophages. A few clusters of breast epithelial cells with small, uniform, benign nuclei are also seen. No malignant cells are detected.",
+            "result": "Benign (Group II according to the Yokohama 2019 classification), consistent with acute inflammation",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Fibroadenoma 1",
+            "describe": "On the smear, breast epithelial cells with round, uniform nuclei and fine chromatin are observed, arranged in tightly bound clusters, interspersed with numerous myoepithelial cells with naked nuclei and fibroblasts. No malignant cells are detected.",
+            "result": "Benign (Group II according to the Yokohama 2019 classification), consistent with fibroadenoma",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "Fibroadenoma 2",
+            "describe": "On the smear, a high cell density is observed. The epithelial cells have small, uniform nuclei with fine chromatin, arranged in clusters, interspersed with numerous myoepithelial cells. The background contains many naked nuclei and fibroblasts. No malignant cells are detected.",
+            "result": "Benign (Group II according to the Yokohama 2019 classification), consistent with fibroadenoma",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          },
+          {
+            "name": "General",
+            "describe": "The smear shows a low to moderate cellularity, with scattered clusters of breast epithelial cells having small, uniform, benign nuclei, interspersed with a few fibrotic and inflammatory cells. No malignant cells are seen.",
+            "result": "Benign (Group II according to the Yokohama 2019 classification).",
+            "recommended": "",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#bed8ee"
+          }
+        ]
+      },
+      {
+        "name": "Group III",
+        "children": [
+          {
+            "name": "Atypical",
+            "describe": "On the smear, there is proliferation of clusters of breast epithelial cells with large, basophilic nuclei, arranged in overlapping patterns, with no clear myoepithelial cells. Scattered fibroblasts and macrophages are also observed.",
+            "result": "Atypical cytology (Group III according to the Yokohama 2019 classification)",
+            "recommended": "Clinical correlation, follow-up, and further fine needle aspiration for evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#fffd3a"
+          }
+        ]
+      },
+      {
+        "name": "Group IV",
+        "children": [
+          {
+            "name": "Suspicious of malignancy",
+            "describe": "On the smear, a high cell density is observed. The epithelial cells have large, irregular, basophilic nuclei, arranged either individually or clusters. No myoepithelial components are seen.",
+            "result": "Suspicious for malignancy (Group IV according to the Yokohama 2019 classification)",
+            "recommended": "Biopsy for diagnosis and histopathological evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#f7caaf"
+          }
+        ]
+      },
+      {
+        "name": "Group V",
+        "children": [
+          {
+            "name": "Malignancy",
+            "describe": "On the smear, a high cell density is observed, with areas of necrosis. The epithelial cells have large, basophilic nuclei, irregular nuclear membranes, prominent nucleoli, and are arranged in clusters or scattered. No myoepithelial cells are seen.",
+            "result": "Malignant (Group V according to the Yokohama 2019 classification), consistent with breast carcinoma",
+            "recommended": "Surgery for diagnosis and histopathological evaluation",
+            "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+            "color": "#ea7a36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lymph node",
+    "children": [
+      {
+        "name": "No malignancy",
+        "describe": "The cytology smear shows predominantly red blood cells, with scattered inflammatory cells. No lymphocytes or malignant cells are observed.",
+        "result": "No malignancy is seen",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#c8e0b7"
+      },
+      {
+        "name": "Chronic lymphadenitis 1",
+        "describe": "The smear shows lymphoid cells, mainly small lymphocytes interspersed with transformed lymphocytes, centrocytes, centroblasts, histiocytes, and follicular dendritic cells. No malignancy is seen.",
+        "result": "Chronic lymphadenitis",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#bed8ee"
+      },
+      {
+        "name": "Chronic lymphadenitis 2",
+        "describe": "The cytologic findings show numerous red blood cells, with scattered mature small lymphocytes having round, uniform nuclei and scant cytoplasm, interspersed with some transformed lymphocytes and fibrotic cells. No specific inflammatory lesions or malignant cells are observed.",
+        "result": "Chronic lymphadenitis",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#bed8ee"
+      },
+      {
+        "name": "Chronic lymphadenitis 3",
+        "describe": "The cytology smear shows numerous small lymphocytes and many transformed lymphocytes with large nuclei and scant cytoplasm, interspersed with macrophages and fibrotic cells on a background of red blood cells. No malignant cells are observed.",
+        "result": "Chronic lymphadenitis",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#bed8ee"
+      },
+      {
+        "name": "Necrotizing lymphadenitis",
+        "describe": "The cytology smear shows mainly degenerated material and necrotic debris, with scattered lymphoid cells. No epithelioid cells or giant cells are observed. No malignant cells are detected.",
+        "result": "Necrotizing lymphadenitis",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#be8d1c"
+      },
+      {
+        "name": "Tuberculous lymphadenitis",
+        "describe": "The cytology smear shows a background of benign lymphocytes, with a few clusters of epithelioid cells interspersed with multinucleated giant cells. Some areas show homogeneous necrotic material. No malignant cells are detected.",
+        "result": "Tuberculous lymphadenitis",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#f7caaf"
+      },
+      {
+        "name": "Lymphoma",
+        "describe": "The cytology smear shows a monomorphic proliferation of lymphoid cells of medium to large size. The cells have basophilic nuclei, coarse chromatin, and irregular, distorted nuclear membranes.",
+        "result": "Suggestive of malignant lymphoma",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#ea7a36"
+      },
+      {
+        "name": "Metastasis of carcinoma",
+        "describe": "The cytology smear shows numerous epithelial cells with large, irregular, hyperchromatic nuclei, coarse chromatin, irregular nuclear membranes, and prominent nucleoli. These cells are seen either singly or in poorly cohesive clusters, set in a background of tumor necrosis.",
+        "result": "Metastasis of carcinoma",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#5d9dd3"
+      },
+      {
+        "name": "Metastasis of squamous cell carcinoma",
+        "describe": "The smear shows squamous epithelial cells with round to elongated, hyperchromatic nuclei, coarse chromatin, irregular nuclear membranes, and scant cytoplasm. These cells are seen singly, set in a background of tumor necrosis.",
+        "result": "Metastasis of squamous cell carcinoma",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#f2ae86"
+      },
+      {
+        "name": "Hodgkin lymphoma",
+        "describe": "On a background of small lymphocytes, scattered lymphoid cells with large, irregular, lobulated nuclei are observed, along with a few eosinophils.",
+        "result": "Suggestive of Hodgkin lymphoma",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#ea7a36"
+      }
+    ]
+  },
+  {
+    "name": "Salivary gland",
+    "children": [
+      {
+        "name": "Pleomorphic adenoma",
+        "describe": "The cytology smear shows clusters of glandular epithelial cells with small nuclei and fine chromatin, interspersed with scattered myoepithelial cells, either singly or in loose clusters. The background contains abundant pale mucinous stroma staining purple-red. No malignant cells are detected.",
+        "result": "Pleomorphic adenoma",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#c8e0b7"
+      },
+      {
+        "name": "Warthin tumor",
+        "describe": "The cytology smear shows glandular epithelial cells with round nuclei, abundant lightly eosinophilic cytoplasm with a cobblestone appearance, arranged in clusters, with some areas forming papillary structures. These cells are interspersed with numerous small lymphocytes and transformed lymphocytes. The background contains dirty proteinaceous material. No malignant cells are detected.",
+        "result": "In favor of Warthin tumor",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#bed8ee"
+      },
+      {
+        "name": "Chronic inflammation",
+        "describe": "The cytology smear shows a few clusters of salivary gland epithelial cells with small nuclei, fine chromatin, and abundant cytoplasm, along with myoepithelial components. Numerous inflammatory cells, mainly lymphocytes, are interspersed. No malignant cells are detected.",
+        "result": "Chronic sialadenitis",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#f7caaf"
+      },
+      {
+        "name": "Adenoid cystic carcinoma",
+        "describe": "The cytology smear shows proliferation of basaloid cells with round to oval nuclei, relatively uniform in size, coarse chromatin, and inconspicuous nucleoli. These cells are seen either singly or in clusters, with areas forming papillary structures, microcystic arrangements, or cribriform patterns. Numerous hyaline or myxoid globules with well-defined borders are observed, surrounded by basaloid cells. Scattered multinucleated cells are also present.",
+        "result": "In favor of adenoid cystic carcinoma",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#ffd76e"
+      },
+      {
+        "name": "General",
+        "describe": "The cytology shows only a few epithelial cells with small, uniform, benign nuclei, interspersed with a small amount of fibromucinous material and inflammatory cells. No malignant cells are observed.",
+        "result": "In favor of benign lesion.",
+        "recommended": "Correlate with clinical findings for follow-up and periodic check-ups.",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#ffd76e"
+      }
+    ]
+  },
+  {
+    "name": "Soft tissue",
+    "children": [
+      {
+        "name": "Epidermoid cyst",
+        "describe": "The cytology smear shows predominantly anucleate squamous cells, either singly or in clusters, on a cystic fluid background. No malignant cells are detected.",
+        "result": "Consistent with benign epidermoid cyst",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#c8e0b7"
+      },
+      {
+        "name": "Spindle cell tumor",
+        "describe": "The cytology smear shows proliferation of spindle cells with small, relatively uniform nuclei, arranged in clusters. The background contains red blood cells and a few chronic inflammatory cells. No malignant cells are detected.",
+        "result": "Spindle cell tumor of undetermined origin",
+        "recommended": "Histopathological examination after excision is recommended for definitive diagnosis",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#bed8ee"
+      },
+      {
+        "name": "Benign lipoma",
+        "describe": "The cytology smear shows adipocytes with small, eccentric nuclei and abundant cytoplasm, present singly or in clusters, interspersed with a few fibroblasts and inflammatory cells. No malignant cells are detected.",
+        "result": "Benign lipoma",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#f2ae86"
+      }
+    ]
+  },
+  {
+    "name": "Pleural/Peritoneal Fluid",
+    "children": [
+      {
+        "name": "Metastatic carcinoma",
+        "describe": "The cytology smear shows numerous clusters of epithelial cells with large, irregular, hyperchromatic nuclei, coarse chromatin, and prominent nucleoli, arranged in glandular-like structures. The background contains a few lymphocytes.",
+        "result": "Metastatic carcinoma in the fluid, highly suggestive of adenocarcinoma",
+        "recommended": "",
+        "samplingMethod": "Chọc hút dịch",
+        "color": "#ffe59e"
+      },
+      {
+        "name": "No malignancy",
+        "describe": "The cytology smear shows mesothelial cells present singly or in clusters, interspersed with macrophages and a few lymphocytes. No malignant cells are seen.",
+        "result": "No malignant cells are seen",
+        "recommended": "",
+        "samplingMethod": "Chọc hút dịch",
+        "color": "#5d9dd3"
+      }
+    ]
+  },
+  {
+    "name": "Synovial fluid",
+    "children": [
+      {
+        "name": "No malignancy",
+        "describe": "The cytology smear shows a background of pale pink fluid, containing a small number of chronic inflammatory cells, interspersed with a few synovial lining cells of normal morphology. No malignant cells are detected.",
+        "result": "No malignant cells are seen",
+        "recommended": "",
+        "samplingMethod": "Chọc hút dịch",
+        "color": "#aeaaaa"
+      },
+      {
+        "name": "Acute inflammation",
+        "describe": "The cytology smear shows numerous inflammatory cells, predominantly neutrophils, interspersed with a few lymphocytes and macrophages. No degenerative neutrophils or malignant cells are detected.",
+        "result": "Acute inflammation. No malignant cells are detected",
+        "recommended": "",
+        "samplingMethod": "Chọc hút dịch",
+        "color": "#c8e0b7"
+      },
+      {
+        "name": "Suppurative inflammation",
+        "describe": "The cytology smear shows numerous inflammatory cells, mainly neutrophils, some of which are degenerated, along with a few lymphocytes. No malignant cells are detected.",
+        "result": "Suppurative inflammation. No malignant cells are detected",
+        "recommended": "",
+        "samplingMethod": "Chọc hút dịch",
+        "color": "#ea7a36"
+      }
+    ]
+  },
+  {
+    "name": "No malignancy",
+    "children": [
+      {
+        "name": "No malignancy",
+        "describe": "The smear shows predominantly red blood cells, with scattered inflammatory cells. No malignant cells are detected.",
+        "result": "No malignancy is seen",
+        "recommended": "",
+        "samplingMethod": "Khác",
+        "color": "#dbdbdb"
+      }
+    ]
+  },
+  {
+    "name": "Cerebrospinal fluid",
+    "children": [
+      {
+        "name": "Cerebrospinal fluid",
+        "describe": "The smear shows a homogeneous proteinaceous background. No epithelial cells or inflammatory cells are observed. No malignant cells are detected.",
+        "result": "Cerebrospinal fluid is within normal limits",
+        "recommended": "",
+        "samplingMethod": "Chọc hút dịch",
+        "color": "#febd29"
+      }
+    ]
+  },
+  {
+    "name": "Giant cell tumor",
+    "children": [
+      {
+        "name": "Giant cell tumor of tendon sheath",
+        "describe": "The smear shows proliferation of two cellular components: mononuclear cells with round, relatively uniform nuclei, abundant cytoplasm, and some with visible nucleoli; and multinucleated giant cells. Scattered fibroblasts and pigment laden histiocytes are also observed.",
+        "result": "Consistent with giant cell tumor of tendon sheath",
+        "recommended": "",
+        "samplingMethod": "Chọc hút bằng kim nhỏ (FNA)",
+        "color": "#5d9dd3"
+      }
+    ]
+  }
+]

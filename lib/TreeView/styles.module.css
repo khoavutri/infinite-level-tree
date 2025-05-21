@@ -1,0 +1,19 @@
+.infiniteLevelTree {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px;
+    height: 100%;
+    overflow: auto;
+}
+
+.infiniteLevelTree .itemCheckBox {
+    width: auto;
+    display: flex;
+    justify-content: start;
+}
+
+.infiniteLevelTree h5,
+span {
+    display: flex;
+    justify-content: start;
+}
