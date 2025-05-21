@@ -146,7 +146,7 @@ The `useTreeNode` hook processes tree data and provides state management for nod
 The `TreeView` component renders the tree structure and supports customization for styling and behavior. It accepts the following props:
 
 - **`treeNode`**: `(TreeNode)` - The tree node object returned by `useTreeNode`, containing processed data and methods.
-- **`popoverContent`**: `(any)` - Optional content for a popover displayed on node interaction.
+- **`popoverContent`**: `(any)` – Optional content for a popover displayed when interacting with a node. *(⚠️Feature in development – use with caution)*
 - **`folderIcon`**: `(React.ReactNode)` - Custom icon for folder nodes.
 - **`expandIcon`**: `(React.ReactNode)` - Custom icon for expanded nodes.
 - **`toggleIcon`**: `(React.ReactNode)` - Custom icon for toggling node expansion.
