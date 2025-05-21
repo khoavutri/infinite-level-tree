@@ -2,7 +2,7 @@
   "name": "infinite-level-tree",
   "author": "Khoa Dev",
   "private": false,
-  "version": "0.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -23,8 +23,16 @@
     "preview": "vite preview"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/node": "^20.11.30",

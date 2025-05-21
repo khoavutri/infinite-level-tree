@@ -53,7 +53,8 @@ export const Popover = ({
         padding: 12,
         transition: 'opacity 0.2s ease-in-out',
         fontSize: 14,
-        width: 400
+        width: "max-content",
+        maxWidth: 400
     };
 
     const defaultTriggerStyle: React.CSSProperties = {

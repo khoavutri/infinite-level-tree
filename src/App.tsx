@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { TreeView, useTreeNode } from '../lib/main'
 import './App.css'
 import data from "./test.json"
@@ -11,12 +11,11 @@ const MyTooltip = ({ data }: { data?: any }) => {
 };
 
 function App() {
-  const [treeData, setTreeData] = useState(null)
   const tree = useTreeNode({ data, config: { left: 50 } })
 
   useEffect(() => {
     const unsubscribe = tree.onCheckedChange((x) => {
-      setTreeData(x.generateCheckedTree());
+      console.log(x.generateCheckedTree());
     });
 
     return () => {
