@@ -64,23 +64,56 @@ npm install infinite-level-tree
 Initialize a tree with a DOM element and data structure:
 
 ```javascript
-const InfiniteLevelTree = require("infinite-level-tree");
-const tree = new InfiniteLevelTree({
-  el: document.querySelector("#tree-container"),
-  data: {
-    id: "root",
-    name: "Root",
-    children: [
-      { id: "child1", name: "Child 1" },
-      {
-        id: "child2",
-        name: "Child 2",
-        children: [{ id: "grandchild1", name: "Grandchild 1" }],
-      },
-    ],
-  },
-  autoOpen: true,
-});
+ const tree = useTreeNode({ data, config: { left: 50 } })
+
+  useEffect(() => {
+    const unsubscribe = tree.onCheckedChange((x) => {
+      console.log(x.generateCheckedTree());
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, [])
+
+  return (
+    <div style={{ height: '100%', }}>
+      <TreeView treeNode={tree} popoverContent={MyTooltip} />
+      <div style={{ display: 'flex', gap: '8px', marginTop: '12px' }}>
+        <button
+          onClick={() => tree.checkAll()}
+        >
+          Check All
+        </button>
+
+        <button
+          onClick={() => tree.unCheckAll()}
+        >
+          Uncheck All
+        </button>
+
+        <button
+          onClick={() => tree.openAll()}
+        >
+          Open All
+        </button>
+
+        <button
+          onClick={() => tree.closeAll()}
+        >
+          Close All
+        </button>
+
+        <button
+          style={{ backgroundColor: '#3b82f6', color: '#fff' }}
+          onClick={() => {
+            const newData = tree.generateCheckedTree();
+            console.log(newData);
+          }}
+        >
+          Generate Data
+        </button>
+      </div>
 ```
 
 ### Configuration Options
