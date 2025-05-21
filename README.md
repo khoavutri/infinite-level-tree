@@ -239,7 +239,6 @@ export default App;
 
 This example:
 
-- Initializes a tree with a root node marked for dynamic loading (`loadOnDemand: true`).
 - Uses `useEffect` to simulate fetching child nodes after a delay.
 - Renders the tree with custom icons and styles using the `TreeView` component.
 - Subscribes to checked state changes to log selected nodes.
