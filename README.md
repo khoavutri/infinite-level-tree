@@ -215,10 +215,14 @@ const App = () => {
 
   // Log checked nodes
   useEffect(() => {
-    treeNode.onCheckedChange((updatedTree) => {
-      console.log("Current tree:", updatedTree);
+    const unsubscribe = tree.onCheckedChange((x) => {
+      console.log(x.generateCheckedTree());
     });
-  }, [treeNode]);
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
 
   return (
     <TreeView
