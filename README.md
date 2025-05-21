@@ -193,7 +193,6 @@ The `useTreeNode` hook supports dynamic node loading by processing data asynchro
 ```javascript
 import React, { useEffect } from "react";
 import { TreeView, useTreeNode } from "infinite-level-tree";
-import "infinite-level-tree/dist/infinite-level-tree.css";
 
 const App = () => {
   const [data, setData] = React.useState({
