@@ -34,13 +34,6 @@ Explore the `infinite-level-tree` in action! The demo showcases a dynamic, hiera
 📺 **Live Demo**: [infinite-level-tree](https://infinite-level-tree.vercel.app/)
 
 🖼️ **Screenshot**:  Comming soon...
-
-To run the demo locally:
-
-1. Follow the [Installation](#installation) steps.
-2. Run `npm run demo` (if available, check repository for specific demo scripts).
-3. Open `http://localhost:3000` in your browser to interact with the tree.
-
 ---
 
 ## 📜 API
