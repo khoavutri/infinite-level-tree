@@ -1,12 +1,6 @@
 # 🚀 [Infinite Level Tree](https://www.npmjs.com/package/infinite-level-tree)
 
-📦 **Owned by:** [Vu Tri Khoa](https://github.com/khoavutri) ([GitLab](https://gitlab.com/khoavip07))
-
-## 🔧 Node.js Version
-
-![Node Version](https://img.shields.io/badge/node-v18.17.1-green)
-
----
+## 📦 **Owned by:** [Vu Tri Khoa](https://github.com/khoavutri) ([GitLab](https://gitlab.com/khoavip07))
 
 ## ✨ Features
 
