@@ -33,4 +33,4 @@ npm start
 
 💌 **Email:** Reach out to me at [khoavutri@gmail.com](mailto:khoavutri@gmail.com)  
 🐛 **GitHub Issues:** Found a bug or have a suggestion? [Open an issue here](https://github.com/khoavutri)  
-💬 **Community Chat:** Join the discussion on [Facebook](https://www.facebook.com/khoa.tri.365.org)
+💬 **Community Chat:** Join the discussion on [Facebook](https://www.facebook.com/company.dev.khoa)
