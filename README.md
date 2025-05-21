@@ -139,7 +139,7 @@ The `useTreeNode` hook processes tree data and provides state management for nod
   - `initalOpen`: `(Boolean)` - If `true`, all folders are expanded initially; if `false`, all folders are collapsed. Default is `false`.
   - `left`: `(Number)` - The indentation in pixels for each level of the tree. Default is `10`.
   - `disableOnlyFolder`: `(Boolean)` – If `false` or not set, clicking on the **folder name** will select all items inside that folder and simultaneously deselect all items outside the folder.   If `true`, this behavior is disabled.
-- `disableOnlyItem`: `(Boolean)` – If `false` or not set, clicking on the **item name** will select only that item and deselect all other items.  If `true`, this behavior is disabled.
+  - `disableOnlyItem`: `(Boolean)` – If `false` or not set, clicking on the **item name** will select only that item and deselect all other items.  If `true`, this behavior is disabled.
 
 #### `TreeView` Component Props
 
