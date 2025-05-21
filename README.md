@@ -33,7 +33,7 @@ Explore the `infinite-level-tree` in action! The demo showcases a dynamic, hiera
 
 📺 **Live Demo**: [infinite-level-tree](https://infinite-level-tree.vercel.app/)
 
-🖼️ **Screenshot**:  
+🖼️ **Screenshot**:  Comming soon...
 
 To run the demo locally:
 
