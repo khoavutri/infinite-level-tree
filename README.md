@@ -33,8 +33,7 @@ Explore the `infinite-level-tree` in action! The demo showcases a dynamic, hiera
 
 📺 **Live Demo**: [infinite-level-tree](https://infinite-level-tree.vercel.app/)
 
-🖼️ **Screenshot**:  Comming soon...
----
+## 🖼️ **Screenshot**: Comming soon...
 
 ## 📜 API
 
@@ -131,15 +130,15 @@ The `useTreeNode` hook processes tree data and provides state management for nod
   - `initalChecked`: `(Boolean)` - If `true`, all leaf nodes are checked initially; if `false`, none are checked; if `underfine`, uses the `checked` property from the data.
   - `initalOpen`: `(Boolean)` - If `true`, all folders are expanded initially; if `false`, all folders are collapsed. Default is `false`.
   - `left`: `(Number)` - The indentation in pixels for each level of the tree. Default is `10`.
-  - `disableOnlyFolder`: `(Boolean)` – If `false` or not set, clicking on the **folder name** will select all items inside that folder and simultaneously deselect all items outside the folder.   If `true`, this behavior is disabled.
-  - `disableOnlyItem`: `(Boolean)` – If `false` or not set, clicking on the **item name** will select only that item and deselect all other items.  If `true`, this behavior is disabled.
+  - `disableOnlyFolder`: `(Boolean)` – If `false` or not set, clicking on the **folder name** will select all items inside that folder and simultaneously deselect all items outside the folder. If `true`, this behavior is disabled.
+  - `disableOnlyItem`: `(Boolean)` – If `false` or not set, clicking on the **item name** will select only that item and deselect all other items. If `true`, this behavior is disabled.
 
 #### `TreeView` Component Props
 
 The `TreeView` component renders the tree structure and supports customization for styling and behavior. It accepts the following props:
 
 - **`treeNode`**: `(TreeNode)` - The tree node object returned by `useTreeNode`, containing processed data and methods.
-- **`popoverContent`**: `(any)` – Optional content for a popover displayed when interacting with a node. *(⚠️Feature in development – use with caution)*
+- **`popoverContent`**: `(any)` – Optional content for a popover displayed when interacting with a node. _(⚠️Feature in development – use with caution)_
 - **`folderIcon`**: `(React.ReactNode)` - Custom icon for folder nodes.
 - **`expandIcon`**: `(React.ReactNode)` - Custom icon for expanded nodes.
 - **`toggleIcon`**: `(React.ReactNode)` - Custom icon for toggling node expansion.
@@ -191,7 +190,7 @@ const App = () => {
   const [data, setData] = React.useState({
     id: "root",
     name: "Root",
-    loadOnDemand: true,
+    checked: true,
     children: [],
   });
 
