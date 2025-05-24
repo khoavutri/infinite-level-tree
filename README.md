@@ -246,5 +246,5 @@ For a complete API reference, see the [GitHub repository](https://github.com/kho
 ## 📞 Support
 
 💌 **Email:** Reach out to me at [khoavutri@gmail.com](mailto:khoavutri@gmail.com)  
-🐛 **GitHub Issues:** Found a bug or have a suggestion? [Open an issue here](https://github.com/khoavutri/infinite-level-tree)  
+🐛 **GitHub Issues:** Found a bug or have a suggestion? [Open an issue here](https://github.com/khoavutri/infinite-level-tree/issues/1)  
 💬 **Community Chat:** Join the discussion on [Facebook](https://www.facebook.com/company.dev.khoa)
