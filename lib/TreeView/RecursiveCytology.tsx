@@ -116,7 +116,7 @@ const RecursiveCytology = ({
               else { treeNode.setCurrent([...treeNode.current, ...dataList]) }
             }}
           >
-            {folderIcon ? folderIcon :
+            {treeNode.config.levelIcon?.[num] ?? folderIcon ??
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"

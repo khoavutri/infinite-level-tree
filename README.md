@@ -132,6 +132,7 @@ The `useTreeNode` hook processes tree data and provides state management for nod
   - `left`: `(Number)` - The indentation in pixels for each level of the tree. Default is `10`.
   - `disableOnlyFolder`: `(Boolean)` – If `false` or not set, clicking on the **folder name** will select all items inside that folder and simultaneously deselect all items outside the folder. If `true`, this behavior is disabled.
   - `disableOnlyItem`: `(Boolean)` – If `false` or not set, clicking on the **item name** will select only that item and deselect all other items. If `true`, this behavior is disabled.
+  - `levelIcon`: `(Record<number, React.ReactNode>)` – Maps a custom folder icon to each depth level, where the key is the level (`0` = root folders, `1` = their children, and so on). Levels not listed fall back to the `folderIcon` prop, then to the default icon. Example: `{ 0: <CompanyIcon />, 1: <DepartmentIcon />, 2: <TeamIcon /> }`.
 
 #### `TreeView` Component Props
 

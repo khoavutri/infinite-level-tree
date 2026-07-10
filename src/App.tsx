@@ -10,7 +10,17 @@ const MyTooltip = ({ data }: { data?: any }) => {
 };
 
 const App = () => {
-  const tree = useTreeNode({ data, config: { left: 50 } })
+  const tree = useTreeNode({
+    data,
+    config: {
+      left: 50,
+      levelIcon: {
+        0: <span>🏥</span>,
+        1: <span>📂</span>,
+        2: <span>🧬</span>,
+      },
+    },
+  })
 
   useEffect(() => {
     const unsubscribe = tree.onCheckedChange((x) => {
