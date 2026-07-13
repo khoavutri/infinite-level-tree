@@ -13,7 +13,7 @@
 }
 
 .infiniteLevelTree h5,
-span {
+.infiniteLevelTree span {
     display: flex;
     justify-content: start;
 }
